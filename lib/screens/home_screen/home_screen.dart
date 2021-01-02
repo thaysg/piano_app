@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:piano_app/screens/home_screen/commom/piano_button_black.dart';
-import 'package:piano_app/screens/home_screen/commom/piano_button_white.dart';
+import 'package:piano_app/screens/home_screen/commom/big_screen.dart';
 import 'package:audioplayers/audio_cache.dart';
+import 'package:piano_app/screens/home_screen/commom/small_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -18,8 +18,17 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
-      body: Stack(
+        backgroundColor: Colors.black,
+        body: LayoutBuilder(
+          builder: (context, constraints) {
+            if (constraints.maxWidth < 100) {
+              return SmallScreen();
+            } else {
+              return BigScreen();
+            }
+          },
+        )
+        /* Stack(
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -137,7 +146,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           )
         ],
-      ),
-    );
+      ), */
+        );
   }
 }

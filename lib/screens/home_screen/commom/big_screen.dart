@@ -21,105 +21,119 @@ class _BigScreenState extends State<BigScreen> {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-          Row(
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              PianoButtonWhite(
-                keyPressed: () {},
+              SafeArea(
+                minimum: const EdgeInsets.only(top: 26),
+                top: true,
+                child: Image.asset(
+                  'images/piano.png',
+                  width: MediaQuery.of(context).size.width,
+                ),
               ),
-              PianoButtonBlack(
-                blackKeyPress: () {
-                  playAudio(audioName: 'audios/piano_C_sharp.mp3');
-                },
-                whitekeyPress: () {
-                  playAudio(audioName: 'audios/piano_D.mp3');
-                },
-              ),
-              PianoButtonBlack(
-                blackKeyPress: () {
-                  playAudio(audioName: 'audios/piano_D_sharp.mp3');
-                },
-                whitekeyPress: () {
-                  playAudio(audioName: 'audios/piano_E.mp3');
-                },
-              ),
-              PianoButtonWhite(
-                keyPressed: () {
-                  playAudio(audioName: 'audios/piano_F.mp3');
-                },
-              ),
-              PianoButtonBlack(
-                blackKeyPress: () {
-                  playAudio(audioName: 'audios/piano_F_sharp.mp3');
-                },
-                whitekeyPress: () {
-                  playAudio(audioName: 'audios/piano_G.mp3');
-                },
-              ),
-              PianoButtonBlack(
-                blackKeyPress: () {
-                  playAudio(audioName: 'audios/piano_G_sharp.mp3');
-                },
-                whitekeyPress: () {
-                  playAudio(audioName: 'audios/piano_A.mp3');
-                },
-              ),
-              PianoButtonBlack(
-                blackKeyPress: () {
-                  playAudio(audioName: 'audios/piano_A_sharp.mp3');
-                },
-                whitekeyPress: () {
-                  playAudio(audioName: 'audios/piano_B.mp3');
-                },
-              ),
-              PianoButtonWhite(
-                keyPressed: () {/*C*/},
-              ),
-              PianoButtonBlack(
-                blackKeyPress: () {
-                  playAudio(audioName: 'audios/piano_C_sharp.mp3');
-                },
-                whitekeyPress: () {
-                  playAudio(audioName: 'audios/piano_D.mp3');
-                },
-              ),
-              PianoButtonBlack(
-                blackKeyPress: () {
-                  playAudio(audioName: 'audios/piano_D_sharp.mp3');
-                },
-                whitekeyPress: () {
-                  playAudio(audioName: 'audios/piano_E.mp3');
-                },
-              ),
-              PianoButtonWhite(
-                keyPressed: () {
-                  playAudio(audioName: 'audios/piano_F.mp3');
-                },
-              ),
-              PianoButtonBlack(
-                blackKeyPress: () {
-                  playAudio(audioName: 'audios/piano_F_sharp.mp3');
-                },
-                whitekeyPress: () {
-                  playAudio(audioName: 'audios/piano_G.mp3');
-                },
-              ),
-              PianoButtonBlack(
-                blackKeyPress: () {
-                  playAudio(audioName: 'audios/piano_G_sharp.mp3');
-                },
-                whitekeyPress: () {
-                  playAudio(audioName: 'audios/piano_A.mp3');
-                },
-              ),
-              PianoButtonBlack(
-                whitekeyPress: () {
-                  playAudio(audioName: 'audios/piano_A_sharp.mp3');
-                },
-                blackKeyPress: () {
-                  playAudio(audioName: 'audios/piano_B.mp3');
-                  playAudio(audioName: 'audios/piano_B.mp3');
-                },
-              ),
+              Row(
+                children: [
+                  PianoButtonWhite(
+                    keyPressed: () {},
+                  ),
+                  PianoButtonBlack(
+                    blackKeyPress: () {
+                      playAudio(audioName: 'audios/piano_C_sharp.mp3');
+                    },
+                    whitekeyPress: () {
+                      playAudio(audioName: 'audios/piano_D.mp3');
+                    },
+                  ),
+                  PianoButtonBlack(
+                    blackKeyPress: () {
+                      playAudio(audioName: 'audios/piano_D_sharp.mp3');
+                    },
+                    whitekeyPress: () {
+                      playAudio(audioName: 'audios/piano_E.mp3');
+                    },
+                  ),
+                  PianoButtonWhite(
+                    keyPressed: () {
+                      playAudio(audioName: 'audios/piano_F.mp3');
+                    },
+                  ),
+                  PianoButtonBlack(
+                    blackKeyPress: () {
+                      playAudio(audioName: 'audios/piano_F_sharp.mp3');
+                    },
+                    whitekeyPress: () {
+                      playAudio(audioName: 'audios/piano_G.mp3');
+                    },
+                  ),
+                  PianoButtonBlack(
+                    blackKeyPress: () {
+                      playAudio(audioName: 'audios/piano_G_sharp.mp3');
+                    },
+                    whitekeyPress: () {
+                      playAudio(audioName: 'audios/piano_A.mp3');
+                    },
+                  ),
+                  PianoButtonBlack(
+                    blackKeyPress: () {
+                      playAudio(audioName: 'audios/piano_A_sharp.mp3');
+                    },
+                    whitekeyPress: () {
+                      playAudio(audioName: 'audios/piano_B.mp3');
+                    },
+                  ),
+                  PianoButtonWhite(
+                    keyPressed: () {/*C*/},
+                  ),
+                  PianoButtonBlack(
+                    blackKeyPress: () {
+                      playAudio(audioName: 'audios/piano_C_sharp.mp3');
+                    },
+                    whitekeyPress: () {
+                      playAudio(audioName: 'audios/piano_D.mp3');
+                    },
+                  ),
+                  PianoButtonBlack(
+                    blackKeyPress: () {
+                      playAudio(audioName: 'audios/piano_D_sharp.mp3');
+                    },
+                    whitekeyPress: () {
+                      playAudio(audioName: 'audios/piano_E.mp3');
+                    },
+                  ),
+                  PianoButtonWhite(
+                    keyPressed: () {
+                      playAudio(audioName: 'audios/piano_F.mp3');
+                    },
+                  ),
+                  PianoButtonBlack(
+                    blackKeyPress: () {
+                      playAudio(audioName: 'audios/piano_F_sharp.mp3');
+                    },
+                    whitekeyPress: () {
+                      playAudio(audioName: 'audios/piano_G.mp3');
+                    },
+                  ),
+                  PianoButtonBlack(
+                    blackKeyPress: () {
+                      playAudio(audioName: 'audios/piano_G_sharp.mp3');
+                    },
+                    whitekeyPress: () {
+                      playAudio(audioName: 'audios/piano_A.mp3');
+                    },
+                  ),
+                  PianoButtonBlack(
+                    whitekeyPress: () {
+                      playAudio(audioName: 'audios/piano_A_sharp.mp3');
+                    },
+                    blackKeyPress: () {
+                      playAudio(audioName: 'audios/piano_B.mp3');
+                      playAudio(audioName: 'audios/piano_B.mp3');
+                    },
+                  ),
+                ],
+              )
             ],
           )
         ],

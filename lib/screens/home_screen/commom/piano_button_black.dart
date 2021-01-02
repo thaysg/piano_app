@@ -29,7 +29,7 @@ class PianoButtonBlack extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.fromLTRB(6, 0, 0, 0),
                 child: Container(
-                    width: MediaQuery.of(context).size.width * .063,
+                    width: MediaQuery.of(context).size.width * .062,
                     /* width: 39, */
                     height: double.infinity,
                     child: RaisedButton(onPressed: whitekeyPress)),
