@@ -10,7 +10,6 @@ class MySplashScreen extends StatelessWidget {
         children: [
           SplashScreen(
             seconds: 2,
-            backgroundColor: Color(0xffC71A4A),
             navigateAfterSeconds: HomeScreen(),
             loaderColor: Colors.transparent,
           ),

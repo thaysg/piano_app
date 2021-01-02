@@ -4,10 +4,6 @@ import 'package:piano_app/screens/home_screen/commom/piano_button_white.dart';
 import 'package:audioplayers/audio_cache.dart';
 
 class HomeScreen extends StatefulWidget {
-  final int currentOctave;
-
-  const HomeScreen({Key key, this.currentOctave}) : super(key: key);
-
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -136,9 +132,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       playAudio(audioName: 'audios/piano_B.mp3');
                     },
                   ),
-                  /* PianoButtonWhite(
-                    keyPressed: () {},
-                  ), */
                 ],
               )
             ],

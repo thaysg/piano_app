@@ -113,13 +113,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
-  dart_midi:
-    dependency: "direct dev"
-    description:
-      name: dart_midi
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -151,27 +144,8 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_midi:
-    dependency: "direct dev"
-    description:
-      name: flutter_midi
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.2"
-  flutter_midi_platform_interface:
-    dependency: transitive
-    description:
-      name: flutter_midi_platform_interface
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.0.1"
   flutter_test:
     dependency: "direct dev"
-    description: flutter
-    source: sdk
-    version: "0.0.0"
-  flutter_web_plugins:
-    dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.0"
@@ -421,13 +395,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.3.12-nullsafety.9"
-  tonic:
-    dependency: "direct dev"
-    description:
-      name: tonic
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.2.3"
   typed_data:
     dependency: transitive
     description:
@@ -449,13 +416,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0-nullsafety.5"
-  vibrate:
-    dependency: "direct dev"
-    description:
-      name: vibrate
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.0.4"
   vm_service:
     dependency: transitive
     description:
